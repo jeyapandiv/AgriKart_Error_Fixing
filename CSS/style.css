@@ -1,0 +1,458 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+    --primary-color:  #5DC7A1;
+    --second-color:#C84E2A;
+    --secondary-color:#153c2e;
+    --shade4-color:   #0b281c;
+    --thirdsade-color:#53b390;
+    --rareUse1-color: #000000;
+    --rareUse2-color: #ffff;
+    --boxshawdow-color:  #ddd;
+    --blur-color:rgba(255, 255, 255, 0.419);
+    --shade5-color: #f5fcf9;
+}
+
+.view{    display: block;}
+.block{ display: none;}
+
+body { 
+    max-width: 1440px; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+ /* top nav bar---------------- */
+
+
+ .navBarCheckout, .navCheckoutInner, .navCheckoutLeft, .navCheckoutRight ,.navSearch ,#navSearchIcon ,.cartProfileIcon  
+ {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .navBarCheckout
+ {
+   width: 100%;
+   height: 60px;
+   background-color: var(--white);
+   margin-bottom: 20px;
+   border-bottom: 1px solid rgb(235, 235, 235);
+   box-shadow: 0px 2px 2px rgb(214, 214, 214);
+   justify-content: center;
+   gap: 10%;
+   position: sticky;
+   top: 0px;
+   background-color: var(--rareUse2-color);
+ }
+
+ /* #plaSideBtn{ display: none;} */
+ .navProfileIcon{ display: none;}
+ .plasignout{ display: none;}
+
+
+ 
+/* side nav bar ---------------------------------------- */
+
+.plaSidediv *{ line-height: 0px;}
+
+#plaSideNavList1:hover{
+color: var(--second-color);
+}
+
+
+li a{
+    color: var(--rareUse2-color);
+}
+h4 a, h4 a i{
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+#plaNavcatlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0px;
+}
+.plaSidediv {
+    position: fixed;
+    top: 0px;
+    background-color: var(--blur-color);
+    border-radius: 6px;
+    height: 655px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.plaSideNavMain {
+    background-color: var(--rareUse2-color);
+    height: 660px;
+    width: 300px;
+    border-right: 1px solid var(--secondary-color);
+    overflow-x: scroll;
+}
+
+.plaSideNav{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#plaSideNavList1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#plaSideNavList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#plaSideNavList a:hover{
+    color: var(--second-color);
+    text-decoration: underline;
+}
+#plaSideClose {
+    position: sticky;
+    top: 30px;
+    right: 5px;
+    margin-left: 260px;
+}
+
+.plasidebdy { display: flex;}
+
+.plasidenavhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plaSideSignin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+ #plasignout:hover{
+    text-decoration: underline;
+ }
+
+ #plasignout, #plaSideBtn {
+    padding: 5px 0px;
+    width: 100px;
+    font-size: 16px;
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius: 4px; 
+    color: var(--rareUse2-color);
+    box-shadow: 1px 1px 5px var(--boxshawdow-color);   
+}
+
+#plaCategoryList{
+    padding: 2px;
+}
+
+#plaSideBtn a{
+    color: var(--rareUse2-color);
+    text-decoration: none;
+}
+#plaSideBtn:hover{ box-shadow: none;  }
+
+#plaSideBtn a:hover{ text-decoration: underline;}
+ 
+#plaCategoryList { width: 100%;}
+
+.plaSideblock { display: block;}
+
+.plaSidenavhide { display: none; }
+
+#plaNavcatlog{
+    display: none;
+}
+
+ /* pla and plp main------------------- */
+
+  .plaAgriKart,.AgriKartPlp{   
+    background-color: var(--rareUse2-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+a i{ color: var(--rareUse2-color); }
+
+a{   text-decoration: none;  color: var(--secondary-color);} 
+
+i{    text-decoration: none;  color: var(--secondary-color); font-size: 24px;}
+
+ /* pla slide show top  -------------------------------*/
+ .plaSlideShowDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 96%;
+    background-color:var(--primary-color);
+    box-shadow: 1px 1px 5px var(--boxshawdow-color);  
+   border-radius: 4px;
+}
+.plaSlideInner1{
+    width: 40%;
+    text-align: center;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .plaSlideInner2{ 
+     height: 200px; 
+     width: 450px;
+     background-position:center;
+     background-size: 450px;
+     background-repeat: no-repeat;
+     object-fit: cover;
+     border-radius: 10px;
+     background-color: var(--rareUse2-color);
+}
+ 
+ #plaSlideShopBtn{
+    padding: 2%;
+    font-size: larger;
+    font-weight: 600;
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius: 4px;    
+}
+
+#plaSlideShopBtn a{
+    color: var(--rareUse2-color);
+    text-decoration: none;
+}
+#plaSlideShopBtn a:hover{
+   text-decoration: underline;
+}
+ #plaSlideShopBtn:hover{
+    box-shadow: 1px 1px 5px var(--boxshawdow-color);
+ }
+
+/* ----------------------card main-------- */
+.plaProductCardMain,.plpProductCardMain {
+    border: 1px solid var(--boxshawdow-color);
+    width: 96%;
+    height: 275px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:var(--shade5-color); 
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.plaproductcard-container,.plpcardGroup {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.plaproductcard-container>*,
+.plpcardGroup>* { 
+    width: 15%;
+}
+.plaproductcardImg,#plaproductcardImg,#plpproductimg{
+    height: 135px;
+    width: 135px;
+    margin-top: 8px;
+}
+.plaProductHeaing,.plpProductHeaing {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plaProductHeaing h3, .plpProductHeaing h3 { margin: 0;}
+
+.plaProductHeaing:hover, .plpProductHeaing:hover{
+color: var(--second-color);
+text-decoration: underline;
+}
+
+
+.placardbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.placardleftbtn, .placardrightbtn {
+    font-size: 25px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.plaproductcard, .plpproductcard {
+    border: 1px solid var(--boxshawdow-color);
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    background-color: var(--rareUse2-color);
+    color: var(--secondary-color);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.plpproductcard  {   padding-bottom: 10px;}
+
+.plpproductcard:hover{
+    border: 1px solid var(--secondary-color);    
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: pointer;
+}
+.plaProductCardMain:hover{
+    border: 1px solid var(--secondary-color);    
+    cursor: pointer;
+    color: var(--second-color);
+}
+
+/*pla footer------------------- */
+.plaFooter {
+    margin-top: 30px;
+    width: 100%;
+    background:var(--secondary-color);
+    line-height: 2px;
+  }
+.plaFooterBackTop{
+    background:var(--shade4-color);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}  
+#plafootAtag{   color: var(--rareUse2-color); font-size: large;}
+#plafootAtag:hover{    color: var(--second-color); text-decoration: underline;}
+.plaFooterMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.plafooterhead{
+    color: var(--second-color);
+}
+
+.plafooterlist{
+    height: 200px;
+    color: var(--rareUse2-color);
+    display: flex;
+    /* gap: 15px; */
+    align-items:flex-start;
+    justify-content:space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.plafooterListitems{
+    padding: 0px 3px 8px 3px;
+    text-decoration: underline var(--secondary-color);
+}
+.plafooterListitems:hover{
+    color: var(--second-color);
+    text-decoration: underline var(--second-color);
+}
+
+li a:hover{
+color: var(--second-color);
+}
+
+/* plp page--------------- */
+.plpAgriKart{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+#plpCardPrice{
+    color: var(--second-color);
+    margin-right: 10px;
+}
+
+#plpProductName {
+    margin: 0;
+}
+
+#plpProductName:hover{
+color: var(--second-color);
+text-decoration: underline;
+}
+#plpPriceDiv h4{
+    margin: 0;
+}
+
+.plaSideSignin button {
+    width: 100px;
+    height: 30px;
+    padding: 5px 0px;
+}
+
+/*------------------------------------------------ scroll bar code */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--rareUse2-color);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--rareUse2-color);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:var(--secondary-color);
+    border-radius: 4px;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+ 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.plaproductcard:hover{    
+    animation: fadeIn 0.5s ease-in-out;
+    cursor:auto;
+}
