@@ -26,7 +26,7 @@ function navigationMain() {
 
 
 const checkoutData = JSON.parse(localStorage.getItem("checkout"));
-// console.log(checkoutData);
+console.log(checkoutData);
 
 let subTotalPriceAdd = document.querySelectorAll("#subTotalPriceAdd");
 let toatlPriceAdd = document.querySelectorAll("#toatlPriceAdd");
@@ -74,7 +74,7 @@ const processStatus = document.querySelector(".processNav").children;
 processStatus[0].classList.add("fontWeight");
 
 function navigatePayment(btn) {
-  if (btn.innerText == "Use this address") {
+  if (btn.innerText == "Use this address" || btn == "Use this address") {
     selectAddress.classList.add("disNone");
     paymentSection.classList.remove("disNone");
     processStatus[0].classList.remove("fontWeight");
@@ -108,7 +108,7 @@ function selectCreateNvAddBtn(btn) {
   if (btn.innerText == "Select Address") {
     btn.innerText = "Create Address";
     selectAddressList.style.display = "block";
-    totalCard2.style.display = "block";
+    totalCard2.style.display = "flex";
     totalCard1.style.display = "none";
     createAddress.style.display = "none";
 
@@ -136,6 +136,7 @@ function selectCreateNvAddBtn(btn) {
 // ---------------new address submission ---------------
 
 newAddForm.addEventListener("submit", () => {
+  event.preventDefault();
 
   selectAddress.classList.add("disNone");
   paymentSection.classList.remove("disNone");

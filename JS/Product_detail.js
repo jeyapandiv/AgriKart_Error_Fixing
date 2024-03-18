@@ -626,7 +626,7 @@ function renderHtml(renderItem) {
                     </div>
                     <div class="add_card">
                     <button onclick="storeProductDetails()">Add to Cart</button>
-                    <button id="navCheckBtn" onclick="navigateCheckout()">Buy Now</button>
+                    <button id="navCheckBtn" onclick="navigateCheckout(this)">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -758,19 +758,18 @@ document
   .addEventListener("click", storeProductDetails());
 
 // --------checking the login status -----------
-
 function navigateCheckout(btn) {
   let storedUser = localStorage.getItem("usercollation");
-  let userCollation = storedUser ? JSON.parse(storedUser) : true;
+  let userCollation = storedUser ? JSON.parse(storedUser) : null;
 
   if (userCollation) {
     if (btn.id == "navCheckBtn") {
       // Extracting product details
-      const productName = document.querySelector(".product-name").innerHTML;
-      const productWeight = document.querySelector(".product-weight").innerHTML;
-      const productPrice = document.querySelector(".product-price").innerHTML;
-      const productQty = document.querySelector(".product-qty").innerHTML;
-      const productImg = document.querySelector(".product-img").innerHTML; 
+      const productName = document.querySelector(".product-name").innerText;
+      const productWeight = document.querySelector(".product-weight").innerText;
+      const productPrice = document.querySelector(".product-price").innerText;
+      const productQty = document.querySelector(".product-qty").value;
+      const productImg = document.querySelector(".product-img").src; // Assuming you want the src attribute
 
       // Creating product detail object
       const productDetails = {
